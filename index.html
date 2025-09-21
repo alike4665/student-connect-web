@@ -3,57 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Campus Connect</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Assignment: Web Page with CSS & JS</h1>
 
-        <section id="part-1">
-            <h2>Part 1: CSS Transitions & Animations</h2>
-            <div class="box-container">
-                <div class="box transition-box">
-                    <p>Hover me for a smooth transition!</p>
-                </div>
-                <div class="box animation-box">
-                    <p>I'm a continuous animation!</p>
-                </div>
-            </div>
-            <button class="styled-btn">Hover for a glow effect</button>
+    <header>
+        <nav>
+            <div class="logo">Campus Connect</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Campus Connect</h1>
+            <p>Your hub for student collaboration and communication.</p>
+            <button id="cta-btn">Join Now</button>
         </section>
 
-        <section id="part-2">
-            <h2>Part 2: JavaScript Functions (Scope, Parameters & Return)</h2>
-            <div class="function-demo">
-                <p>Enter two numbers to see the power of a custom function:</p>
-                <input type="number" id="num1" value="5">
-                <input type="number" id="num2" value="10">
-                <button id="calculate-btn">Calculate Sum & Product</button>
-                <div id="function-output"></div>
-            </div>
+        <section id="about" class="content-section">
+            <h2>About Us</h2>
+            <p>Campus Connect is a platform designed to help students collaborate on projects, share resources, and build a stronger academic community. It's a professional and user-friendly space to enhance your university experience.</p>
+            <p>Our mission is to foster a supportive environment where students can connect, learn, and grow together.</p>
         </section>
 
-        <section id="part-3">
-            <h2>Part 3: Combining CSS & JS</h2>
-            <div class="interactive-area">
-                <button id="trigger-animation">Trigger Animation</button>
-                <div class="js-animated-box"></div>
-                
-                <div class="card-flip-container">
-                    <div class="card" id="card-flip">
-                        <div class="card-front">
-                            <h3>Flip Me!</h3>
-                        </div>
-                        <div class="card-back">
-                            <p>You did it!</p>
-                        </div>
-                    </div>
+        <section id="community" class="content-section">
+            <h2>Our Community</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Study Groups</h3>
+                    <p>Find and create study groups for your classes.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Hub</h3>
+                    <p>Collaborate on projects and share your work.</p>
+                </div>
+                <div class="card">
+                    <h3>Resource Library</h3>
+                    <p>Access and share academic resources.</p>
                 </div>
             </div>
         </section>
 
-    </div>
+        <section id="contact" class="content-section">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <p id="form-message" class="hidden"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Campus Connect. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
